@@ -1,1 +1,1 @@
-This is the FOlder level README for Python Introductory projects
+This is the Folder level README for Python Introductory projects
