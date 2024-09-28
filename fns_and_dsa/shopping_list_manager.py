@@ -4,11 +4,18 @@ def display_menu():
     """
     Display the main menu with options for managing the shopping list.
     """
-    print("\nShopping List Manager")
-    print("1. Add an item")
-    print("2. Remove an item")
-    print("3. View the shopping list")
-    print("4. Exit")
+   # shopping_list_manager.py
+
+def display_menu():
+    """
+    Display the main menu with options for managing the shopping list.
+    """
+    print(f"Shopping List Manager") 
+    print(f"1. Add Item")            
+    print(f"2. Remove Item")
+    print(f"3. View List")
+    print(f"4. Exit")
+
 
 def add_item(shopping_list):
     """
