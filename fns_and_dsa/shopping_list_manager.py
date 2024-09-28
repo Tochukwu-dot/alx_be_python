@@ -1,15 +1,5 @@
-# shopping_list_manager.py
-
 def display_menu():
-    """
-    Display the main menu with options for managing the shopping list.
-    """
-   # shopping_list_manager.py
 
-def display_menu():
-    """
-    Display the main menu with options for managing the shopping list.
-    """
     print(f"Shopping List Manager") 
     print(f"1. Add Item")            
     print(f"2. Remove Item")
@@ -18,24 +8,14 @@ def display_menu():
 
 
 def add_item(shopping_list):
-    """
-    Add an item to the shopping list.
     
-    Parameters:
-    shopping_list (list): The current shopping list.
-    """
     item = input("Enter the item to add: ")  # Updated prompt to match the expected string
     shopping_list.append(item)
     print(f"'{item}' has been added to the list.")
 
 
 def remove_item(shopping_list):
-    """
-    Remove an item from the shopping list.
     
-    Parameters:
-    shopping_list (list): The current shopping list.
-    """
     item = input("Enter the item to remove: ")
     if item in shopping_list:
         shopping_list.remove(item)
@@ -44,12 +24,7 @@ def remove_item(shopping_list):
         print(f"'{item}' is not in the shopping list.")
 
 def view_list(shopping_list):
-    """
-    Display the current shopping list.
     
-    Parameters:
-    shopping_list (list): The current shopping list.
-    """
     if shopping_list:
         print("\nCurrent Shopping List:")
         for index, item in enumerate(shopping_list, 1):
@@ -58,9 +33,7 @@ def view_list(shopping_list):
         print("\nThe shopping list is empty.")
 
 def shopping_list_manager():
-    """
-    Main function to manage the shopping list, displaying the menu and handling user input.
-    """
+    
     shopping_list = []
     
     while True:

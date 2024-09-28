@@ -6,37 +6,15 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 FREEZING_POINT_DIFFERENCE = 32
 
 def convert_to_celsius(fahrenheit):
-    """
-    Convert Fahrenheit to Celsius using the global conversion factor.
     
-    Parameters:
-    fahrenheit (float): Temperature in Fahrenheit.
-    
-    Returns:
-    float: Temperature converted to Celsius.
-    """
     return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
-    """
-    Convert Celsius to Fahrenheit using the global conversion factor.
-    
-    Parameters:
-    celsius (float): Temperature in Celsius.
-    
-    Returns:
-    float: Temperature converted to Fahrenheit.
-    """
+   
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
 def get_temperature_input():
-    """
-    Prompt the user to input a temperature and whether it's in Celsius or Fahrenheit.
     
-    Returns:
-    float: The temperature to convert.
-    str: The temperature unit ('C' or 'F').
-    """
     try:
         temperature = float(input("Enter the temperature to convert: "))
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
@@ -49,9 +27,7 @@ def get_temperature_input():
         raise ValueError("Invalid temperature. Please enter a numeric value.") from e
 
 def main():
-    """
-    Main function to handle temperature conversion based on user input.
-    """
+    
     try:
         temperature, unit = get_temperature_input()
         
