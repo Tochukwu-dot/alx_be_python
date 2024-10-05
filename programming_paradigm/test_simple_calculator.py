@@ -1,4 +1,4 @@
-# test_calculator.py
+# test_simple_calculator.py
 
 import unittest
 from simple_calculator import SimpleCalculator
@@ -9,23 +9,23 @@ class TestSimpleCalculator(unittest.TestCase):
         """Set up a SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    # Test for addition
-    def test_add(self):
+    # Test for addition (fixing the naming and syntax)
+    def test_addition(self):
         result = self.calc.add(5, 3)
         self.assertEqual(result, 8)
-    
+
     # Test for subtraction
-    def test_subtract(self):
+    def test_subtraction(self):
         result = self.calc.subtract(10, 5)
         self.assertEqual(result, 5)
 
     # Test for multiplication
-    def test_multiply(self):
+    def test_multiplication(self):
         result = self.calc.multiply(4, 3)
         self.assertEqual(result, 12)
 
     # Test for division
-    def test_divide(self):
+    def test_division(self):
         result = self.calc.divide(10, 2)
         self.assertEqual(result, 5)
 
