@@ -11,13 +11,13 @@ class BankAccount:
         print(f"Deposited: ${amount:.1f}")  # Ensure only one print statement
 
     def withdraw(self, amount):
-        """Withdraw the specified amount from the account if sufficient balance exists."""
+    
         if amount <= self.account_balance:
             self.account_balance -= amount
             print(f"Withdrew: ${amount:.1f}")  # Ensure only one print statement
             return True
         else:
-            print(f"Error: Insufficient funds for withdrawal of ${amount:.1f}")  # Error message
+            print("Insufficient funds.")  # Simplified to only print the required message
             return False
 
     def display_balance(self):
