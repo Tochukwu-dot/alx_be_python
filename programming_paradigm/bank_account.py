@@ -15,10 +15,10 @@ class BankAccount:
         if amount <= self.account_balance:
             self.account_balance -= amount
             print(f"Withdrew: ${amount:.1f}")  # Ensure this is the only print statement for successful withdrawal
-            return True
+            # return True
         else:
             print("Insufficient funds.")  # Simplified to only print the required message
-            return False
+            # return False
 
     def display_balance(self):
         """Display the current balance in the account."""
