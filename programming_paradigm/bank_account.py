@@ -8,13 +8,13 @@ class BankAccount:
     def deposit(self, amount):
         """Deposit the specified amount to the account and print the amount deposited."""
         self.account_balance += amount
-        print(f"Deposited: ${amount:.1f}")  # Output exactly as required
+        print(f"Deposited: ${amount:.1f}")  # Output format
 
     def withdraw(self, amount):
         """Withdraw the specified amount from the account if sufficient balance exists."""
         if amount <= self.account_balance:
             self.account_balance -= amount
-            print(f"Withdrew: ${amount:.1f}")  # Corrected to match the expected output
+            print(f"Withdrew: ${amount:.1f}")  # Output format
             return True
         else:
             print(f"Error: Insufficient funds for withdrawal of ${amount:.1f}")
@@ -22,4 +22,4 @@ class BankAccount:
 
     def display_balance(self):
         """Display the current balance in the account."""
-        print(f"Current balance: ${self.account_balance:.2f}")
+        print(f"Current Balance: ${self.account_balance:.2f}")  # Corrected to match the expected output
