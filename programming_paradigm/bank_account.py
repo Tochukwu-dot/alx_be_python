@@ -1,7 +1,7 @@
 # bank_account.py
 
 class BankAccount:
-    def _init_(self, initial_balance=0):
+    def __init__(self, initial_balance=0):
         """
         Initialize a bank account with an optional initial balance (default is 0).
         """
