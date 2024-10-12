@@ -28,5 +28,29 @@ class EBook(Book):
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
         """Initialize a PrintBook with title, author, and page_count"""
-        super().__init (title, author, page_count)
-        self.page_count = page_count
+        super().__init__(title, author)
+        self.page_count = page_count  # number of pages
+
+    def __str__(self):
+        """String representation for PrintBook"""
+        return f"'{self.title}' by {self.author} (PrintBook, {self.page_count} pages)"
+
+
+# Composition class: Library
+class Library:
+    def __init__(self):
+        """Initialize the library with an empty list of books"""
+        self.books = []
+
+    def add_book(self, book):
+        """Add a Book, EBook, or PrintBook to the library"""
+        self.books.append(book)
+
+    def list_books(self):
+        """List all books in the library"""
+        if not self.books:
+            print("The library has no books.")
+        else:
+            print("Books in the library:")
+            for book in self.books:
+                print(f" - {book}")
