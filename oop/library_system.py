@@ -9,19 +9,20 @@ class Book:
 
     def __str__(self):
         """String representation for Book"""
-        return f"'{self.title}' by {self.author}"
+        return f"Book: {self.title} by {self.author}"
 
 
 # Derived class for EBook
 class EBook(Book):
     def __init__(self, title, author, file_size):
-        """Initialize an EBook with title, author, and file_size"""
+        """Initialize an EBook with title, author, and file_size in MB"""
         super().__init__(title, author)
         self.file_size = file_size  # in MB
 
     def __str__(self):
-        """String representation for EBook"""
-        return f"'{self.title}' by {self.author} (EBook, {self.file_size}MB)"
+        """String representation for EBook (convert file size to KB)"""
+        file_size_kb = self.file_size * 1024  # convert MB to KB
+        return f"EBook: {self.title} by {self.author}, File Size: {file_size_kb}KB"
 
 
 # Derived class for PrintBook
@@ -33,7 +34,7 @@ class PrintBook(Book):
 
     def __str__(self):
         """String representation for PrintBook"""
-        return f"'{self.title}' by {self.author} (PrintBook, {self.page_count} pages)"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count} pages"
 
 
 # Composition class: Library
