@@ -34,7 +34,7 @@ class PrintBook(Book):
 
     def __str__(self):
         """String representation for PrintBook"""
-        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count} pages"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 # Composition class: Library
