@@ -17,7 +17,7 @@ class Book:
     
     def __repr__(self):
         """Official representation to recreate the Book instance"""
-        return f"Book({self.title}, {self.author}, {self.year})"
+        return f"Book('{self.title}', '{self.author}', {self.year})"
 
 # Example usage:
 # if __name__ == "__main__":
