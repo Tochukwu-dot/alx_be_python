@@ -21,7 +21,7 @@ class EBook(Book):
 
     def __str__(self):
         """String representation for EBook (convert file size to KB)"""
-        file_size_kb = self.file_size * 1024  # convert MB to KB
+        file_size_kb = self.file_size
         return f"EBook: {self.title} by {self.author}, File Size: {file_size_kb}KB"
 
 
