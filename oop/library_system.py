@@ -28,4 +28,5 @@ class EBook(Book):
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
         """Initialize a PrintBook with title, author, and page_count"""
-        super().__init
+        super().__init (title, author, page_count)
+        self.page_count = page_count
