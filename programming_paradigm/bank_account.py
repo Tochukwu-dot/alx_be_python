@@ -8,18 +8,18 @@ class BankAccount:
     def deposit(self, amount):
         """Deposit the specified amount to the account and print the amount deposited."""
         self.account_balance += amount
-        print(f"Deposited: ${amount:.1f}")  # Ensure only one print statement
+        #print(f"Deposited: ${amount:.1f}")  # Ensure only one print statement
 
     def withdraw(self, amount):
     
         if amount <= self.account_balance:
             self.account_balance -= amount
-            print(f"Withdrew: ${amount:.1f}")  # Ensure this is the only print statement for successful withdrawal
-            # return True
+            #print(f"Withdrew: ${amount:.1f}")  # Ensure this is the only print statement for successful withdrawal
+            return True
         else:
-            print("Insufficient funds.")  # Simplified to only print the required message
-            # return False
+            #print("Insufficient funds.")  # Simplified to only print the required message
+             return False
 
     def display_balance(self):
         """Display the current balance in the account."""
-        print(f"Current Balance: ${self.account_balance:.2f}")  # Print the current balance
+        #print(f"Current Balance: ${self.account_balance:.2f}")  # Print the current balance
